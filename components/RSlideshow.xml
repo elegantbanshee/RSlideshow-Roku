@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="RSlideshow" extends="Scene">
+	<children>
+    <Rectangle
+    id="background"
+    color="0x19171c"
+    width="1920"
+    height="1080" />
+
+    <Poster
+      id="image"
+      width="1920"
+      height="1080"
+			loadDisplayMode="scaleToFit"/>
+
+    <Video
+      id="video"
+      width="1920"
+      height="1080"/>
+
+    <RSlideshowApi
+      id="rslideshow_api"/>
+
+    <Registry
+      id="registry"/>
+
+			<Timer
+				id="timer"/>
+
+		 <Keyboard
+			 id="keyboard"
+			 translation="[230,600]"
+			 visible="false" />
+
+			<Label
+				id="title" />
+    </children>
+
+    <script type="text/brightscript" uri="pkg:/source/RSlideshow.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Util.brs" />
+</component>
