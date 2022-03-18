@@ -143,6 +143,8 @@ function on_api_images(params) as void
     if data <> invalid
         m.page = data.after
         m.images.append(data.data)
+        reset_timer()
+        on_timer_fire()
     else
         printl(m.DEBUG, "API error")
         m.index = 0
