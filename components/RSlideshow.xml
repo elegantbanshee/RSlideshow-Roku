@@ -7,6 +7,11 @@
     width="1920"
     height="1080" />
 
+		<Label
+			id="loading"
+			translation="[700,600]"
+			text="Loading" />
+
     <Poster
       id="image"
       width="1920"
