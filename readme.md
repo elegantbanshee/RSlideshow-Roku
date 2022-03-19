@@ -1,4 +1,4 @@
-# Avocado
+# RSlideshow Roku
 
 Reddit slideshow for the Roku
 
