@@ -202,6 +202,7 @@ function handle_options_key() as void
         m.video.visible = true
         m.image.visible = true
         m.loading.visible = true
+        m.title.visible = true
         m.image.setFocus(true)
     else
         m.registry.read = ["RSLIDESHOW", "SUBREDDITS", "on_registry_subreddits_keyboard"]
@@ -211,6 +212,7 @@ function handle_options_key() as void
         m.video.visible = false
         m.image.visible = false
         m.loading.visible = false
+        m.title.visible = false
         m.keyboard.setFocus(true)
     end if
 end function
