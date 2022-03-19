@@ -9,7 +9,7 @@
 
 		<Label
 			id="loading"
-			translation="[700,600]"
+			translation="[900,550]"
 			text="Loading" />
 
     <Poster
