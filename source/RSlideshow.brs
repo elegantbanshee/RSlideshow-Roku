@@ -178,11 +178,13 @@ function move_left() as void
     if m.index < 0
         m.index = 0
     end if
+    m.Video.control = "stop"
     reset_timer()
     on_timer_fire()
 end function
 
 function move_right() as void
+    m.Video.control = "stop"
     reset_timer()
     on_timer_fire()
 end function
@@ -242,6 +244,7 @@ function handle_back() as boolean
 end function
 
 function onKeyEvent(key, press) as Boolean
+    printl(m.DEBUG, "Key: " + key + " Press: " + press.toStr())
     if press
         if key = "left"
             move_left()
