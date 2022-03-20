@@ -190,7 +190,7 @@ function move_right() as void
 end function
 
 function on_registry_subreddits_keyboard(event) as void
-    m.keyboard.text = event.getData().result
+    m.keyboard.text = clean(event.getData().result)
     m.keyboard.textEditBox.cursorPosition = m.keyboard.text.len()
 end function
 
